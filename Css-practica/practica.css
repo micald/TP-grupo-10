@@ -1,0 +1,78 @@
+
+h1 {
+    color: rgb(22, 108, 206);
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Macondo Swash Caps', cursive;
+} 
+
+.h1relativo{
+    color: rgb(22, 108, 206);
+font-size: 70px;
+text-align: center;
+
+
+}
+
+.h2 {
+    color:rgb(15, 15, 34);
+    background-color:rgb(22, 108, 206);
+    text-align: center;
+    font-family: 'Macondo Swash Caps', cursive;
+}
+
+ nav {
+    /* color: rgb(15, 15, 34); */
+    background-color:rgb(22, 108, 206);
+    font-family: 'Macondo Swash Caps', cursive;
+    font-size: 30px;
+
+ }
+
+
+body{
+    /* background-color: rgb(11, 28, 49); */
+background-color:  rgb(12, 37, 58);
+
+}
+
+
+
+
+
+.slider {
+	width: 65%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}

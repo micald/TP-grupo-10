@@ -1,0 +1,52 @@
+
+h1 {
+    color: rgb(22, 108, 206);
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Macondo Swash Caps', cursive;
+} 
+
+.h1relativo{
+    color: rgb(22, 108, 206);
+font-size: 70px;
+text-align: center;
+
+}
+
+h2 {
+    color:rgb(15, 15, 34);
+    background-color:rgb(22, 108, 206);
+    text-align: center;
+    font-family: 'Macondo Swash Caps', cursive;
+}
+
+ nav {
+    color: rgb(15, 15, 34);
+    background-color:rgb(22, 108, 206);
+    font-family: 'Macondo Swash Caps', cursive;
+    font-size: 30px;
+
+ }
+
+body{
+    /* background-color: rgb(11, 28, 49); */
+background-color:  rgb(12, 37, 58);
+
+}
+
+.Container-Quienes{
+    display: grid; 
+    grid-template-columns: 1.1fr 0.9fr 1fr; 
+    grid-template-rows: 0.5fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "grid-info grid-info grid-info"
+    "foto1 info-1 info-1"
+    "info-2 info-2 foto-2"; 
+}
+.grid-info { grid-area: grid-info; }
+.foto-1 { grid-area: foto1; }
+.info-1 { grid-area: info-1; }
+.info-2 { grid-area: info-2; }
+.foto-2 { grid-area: foto-2; }
+

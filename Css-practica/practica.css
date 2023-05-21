@@ -2,17 +2,19 @@
 h1 {
     color: rgb(22, 108, 206);
     font-size: 50px;
+	padding: 20px 0;
     text-align: center;
     font-family: 'Macondo Swash Caps', cursive;
+	
 } 
 
 .h1relativo{
     color: rgb(22, 108, 206);
+	
 font-size: 70px;
 text-align: center;
-
-
 }
+
 
 .h2 {
     color:rgb(15, 15, 34);
@@ -29,21 +31,16 @@ text-align: center;
 
  }
 
-
 body{
-    /* background-color: rgb(11, 28, 49); */
 background-color:  rgb(12, 37, 58);
 
 }
 
 
-
-
-
 .slider {
-	width: 65%;
+	width: 70%;
 	margin: auto;
-	overflow: hidden;
+	overflow:hidden;
 }
 
 .slider ul {
@@ -51,7 +48,7 @@ background-color:  rgb(12, 37, 58);
 	padding: 0;
 	width: 300%;
 	
-	animation: cambio 20s infinite alternate linear;
+	animation: cambio 15s infinite alternate linear;
 }
 
 .slider li {
@@ -76,3 +73,28 @@ background-color:  rgb(12, 37, 58);
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 }
+
+
+  .container {
+	display:grid;
+	grid-template-columns:repeat(6, 1fr); /* Para dividir en  columnas */
+	grid-gap: 20px; /* Ajusta el espacio entre las imágenes según tus necesidades */
+	justify-content: center; /* Centra horizontalmente las imágenes */
+   align-content: center;
+ padding: 10px;
+}
+
+  .image {
+	height: 100px; /* Ajusta la altura según tus necesidades */
+	/* scale: 1.2; */
+  }
+
+
+  .image-container-lana{
+
+width:200px ;
+height:350px;
+background-color: white;
+  }
+
+  

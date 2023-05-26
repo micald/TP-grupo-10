@@ -1,28 +1,20 @@
+body {
+	background-color: rgb(255, 255, 255);
+	font-family: 'Macondo Swash Caps', cursive;
+	width: 100vw;
+	margin: 0;
+	padding-top: 2em;
+}
 .logo{
 	justify-content:center;
 }
 
 h1 {
 	color:  rgb(12, 56, 100);
-	font-size: 50px;
-	font-family: 'Macondo Swash Caps', cursive;
-}
-
-/* .h1relativo{
-color: rgb(22, 108, 206);
-font-size: 70px;
-text-align: center;
-} */
-
-div {
-
-	font-size: 30px;
+	font-size: 3em;
 	text-align: center;
-}
-
-.divrelativo {
-	display: flex;
-	
+	font-family: 'Macondo Swash Caps', cursive;
+	margin: 0.5em;
 }
 
 a {
@@ -40,16 +32,29 @@ a {
 }
 
 nav {
+	background-color: rgb(12, 56, 100);
+	padding: 0.25em;
+	width: 100%;
 	display: flex;
 	flex: 1 0 33.33%;
-	background-color: rgb(12, 56, 100);
-	color: rgb(108, 204, 244);
+	justify-content: space-evenly;
+	text-align: center;
 	font-family: 'Macondo Swash Caps', cursive;
-	font-size: 20px;
-	justify-content: center;
+	font-size: 1.2em;
+	color: rgb(108, 204, 244);
+	text-decoration: dashed;
 	
-	
+	transform: scale(1);
+	transition: all 0.3s ease;
 }
+
+nav a:hover {
+	font-weight: 400;
+	background-color: rgba(28, 27, 25, 0.37);
+	color: #fff;
+	padding: 0 10px;
+	border-radius: 5px;	
+	transform: scale(1.1);
 
 .section {
 	font-family: 'Macondo Swash Caps', cursive;
@@ -57,16 +62,11 @@ nav {
 	justify-content: center;
   }
 
-  h3{
+h3 {
 	color:  rgb(12, 56, 100);
 	font-size: 50px;
 	font-family: 'Macondo Swash Caps', cursive;
   }
-body {
-	background-color: rgb(255, 255, 255);
-
-}
-
 
 .slider {
 	width: 100%;
@@ -94,6 +94,176 @@ body {
 .slider img {
 	width: 50%;
 	align-content: center;
+}
+
+.container-md {
+	background-color: rgb(177, 104, 104);
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: white;
+	font-size: 1em;
+	width: 100%;
+	padding: 20px;
+
+}
+
+form {
+	width: 50%;
+}
+
+input {
+	width: 100%;
+	padding: 10px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-radius: 15px;
+	border: 1px solid white;
+}
+
+#Enviar {
+	background-color: white;
+	border: 1px solid rgb(87, 100, 12);
+	color: black;
+	padding: 15px 32px;
+	margin: 30px 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.3em;
+	transform: scale(1);
+	transition: all 0.3s ease;
+}
+
+#Enviar:hover{
+	transform: scale(1.1);
+	color: white;
+	background-color: #ec9513;
+}
+
+.consulta {
+	height: 300px;
+
+}
+
+.advertencia {
+	color: white;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer {
+	width: 100%;
+	background-color: rgba(51, 51, 51, 0.9);
+	padding: 15px;
+	color: #fff;
+	text-align: center;
+	margin-top: 50px;
+	height: 130px;
+}
+
+.redes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-icon {
+	display: inline-block;
+	font-size: 2em;
+	color: #fff;
+	margin: 20px;
+	transform: scale(1);
+	transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+	transform: scale(1.2);
+	color: #ec9513;
+}
+
+.container-md {
+	background-color: rgb(177, 104, 104);
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: white;
+	font-size: 1em;
+	width: 100%;
+	padding: 20px;
+
+}
+
+form {
+	width: 50%;
+}
+
+input {
+	width: 100%;
+	padding: 10px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-radius: 15px;
+	border: 1px solid white;
+}
+
+#Enviar {
+	background-color: white;
+	border: 1px solid rgb(87, 100, 12);
+	color: black;
+	padding: 15px 32px;
+	margin: 30px 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.3em;
+	transform: scale(1);
+	transition: all 0.3s ease;
+}
+
+#Enviar:hover{
+	transform: scale(1.1);
+	color: white;
+	background-color: #ec9513;
+}
+
+.consulta {
+	height: 300px;
+
+}
+
+.advertencia {
+	color: white;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer {
+	width: 100%;
+	background-color: rgba(51, 51, 51, 0.9);
+	padding: 15px;
+	color: #fff;
+	text-align: center;
+	margin-top: 50px;
+	height: 130px;
+}
+
+.redes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-icon {
+	display: inline-block;
+	font-size: 2em;
+	color: #fff;
+	margin: 20px;
+	transform: scale(1);
+	transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+	transform: scale(1.2);
+	color: #ec9513;
+}
+
+.copyright {
+	font-size: 1em;
 }
 
 @keyframes cambio {
@@ -150,4 +320,9 @@ body {
 .border {
 	border: 3px solid rgb(12, 56, 100);
 	border-radius: 20px;
+}
+
+	100% {
+		margin-left: -300%;
+	}
 }

@@ -42,12 +42,13 @@ nav {
 	font-size: 1.2em;
 	color: rgb(108, 204, 244);
 	text-decoration: dashed;
+
 	transform: scale(1);
 	transition: all 0.3s ease;
 }
 
 nav a:hover {
-	font-weight: 700;
+	font-weight: 400;
 	background-color: rgba(28, 27, 25, 0.37);
 	color: #fff;
 	padding: 0 10px;
@@ -59,7 +60,6 @@ section {
 	font-family: 'Macondo Swash Caps', cursive;
 	background-color: rgb(12, 56, 100);
 	justify-content: center;
-
 }
 
 h3 {
@@ -70,9 +70,9 @@ h3 {
 
 .slider {
 	width: 100%;
-	display: flex;
-	overflow: scroll;
-	justify-content: center;
+	margin: auto;
+	overflow: hidden;
+	align-content: center;
 }
 
 .slider ul {
@@ -312,6 +312,93 @@ footer {
 	78% {
 		margin-left: -300%;
 	}
+
+	100% {
+		margin-left: -300%;
+	}
+}
+
+.Container-Quienes{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-rows: 45% 55%; 
+    /* gap: 10px;  */
+    grid-template-areas: 
+    "foto1 	info-1 info-1"
+    "info-2 info-2 foto-2" 
+}
+.foto-1 { 
+    grid-area: foto1; 
+}
+.info-1 { 
+    grid-area: info-1; 
+}
+.info-2 { 
+    grid-area: info-2; 
+}
+.foto-2 { 
+    grid-area: foto-2;
+    align-content: flex-end; 
+}
+
+.grid-info{
+    /* font-family: 'Macondo Swash Caps', cursive; */
+    font-size: 20px;
+    color: beige;
+    text-align:left;
+}
+
+.info-1, .info-2{
+    /* font-family: 'Macondo Swash Caps', cursive; */
+    /* font-size: 25px; */
+    color: beige;
+    text-align: justify;
+    line-height: 2.5;
+	margin: 2px;
+}
+
+.foto-1, .foto-2{
+    max-width: 100%;
+	border-image: auto;
+	border-color: aliceblue;
+}
+
+@media (max-width: 800px) {
+    .Container-Quienes{
+        grid-template-areas:     
+        "foto1"
+        "info-1"
+        "foto-2"
+        "info-2"
+    }
+}
+  
+@media (min-width: 800px) and (max-width: 1280px) {
+	.Container-Quienes{
+        grid-template-areas:     
+        "foto1 	info-1 info-1"
+    	"info-2 info-2 foto-2"
+	}
+	body {
+		grid-template-areas:
+		"quienessomos"
+		"Container-Quienes"
+		"redes";
+	}
+}
+  
+@media (min-width: 1280px) {
+	.Container-Quienes{
+        grid-template-areas:     
+        "foto1 	info-1 info-1"
+    	"info-2 info-2 foto-2"
+	}
+<<<<<<< Updated upstream
+  }
+  
+=======
+  }
+>>>>>>> Stashed changes
 
 	100% {
 		margin-left: -300%;

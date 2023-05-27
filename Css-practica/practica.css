@@ -7,7 +7,9 @@ body {
 }
 
 .logo {
+	display: flex;
 	justify-content: center;
+	align-content: center;
 	}
 
 h1 {
@@ -40,13 +42,12 @@ nav {
 	font-size: 1.2em;
 	color: rgb(108, 204, 244);
 	text-decoration: dashed;
-
 	transform: scale(1);
 	transition: all 0.3s ease;
 }
 
 nav a:hover {
-	font-weight: 400;
+	font-weight: 700;
 	background-color: rgba(28, 27, 25, 0.37);
 	color: #fff;
 	padding: 0 10px;
@@ -58,6 +59,7 @@ section {
 	font-family: 'Macondo Swash Caps', cursive;
 	background-color: rgb(12, 56, 100);
 	justify-content: center;
+
 }
 
 h3 {
@@ -68,9 +70,9 @@ h3 {
 
 .slider {
 	width: 100%;
-	margin: auto;
-	overflow: hidden;
-	align-content: center;
+	display: flex;
+	overflow: scroll;
+	justify-content: center;
 }
 
 .slider ul {

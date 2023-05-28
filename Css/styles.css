@@ -71,8 +71,8 @@ h3 {
 .slider {
 	width: 100%;
 	margin: auto;
-	overflow: hidden;
-	align-content: center;
+	/* overflow: hidden; */
+	justify-content: center;
 }
 
 .slider ul {
@@ -379,13 +379,6 @@ footer {
         "foto1 	info-1 info-1"
     	"info-2 info-2 foto-2"
 	}
-	body {
-		grid-template-areas:
-		"quienessomos"
-		"Container-Quienes"
-		"redes";
-	}
-}
   
 @media (min-width: 1280px) {
 	.Container-Quienes{
@@ -393,4 +386,3 @@ footer {
         "foto1 	info-1 info-1"
     	"info-2 info-2 foto-2"
 	}
-  }

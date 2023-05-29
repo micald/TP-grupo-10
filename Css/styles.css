@@ -10,7 +10,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	}
+}
 
 h1 {
 	color: rgb(12, 56, 100);
@@ -60,6 +60,19 @@ section {
 	font-family: 'Macondo Swash Caps', cursive;
 	background-color: rgb(12, 56, 100);
 	justify-content: center;
+	list-style: none;
+}
+
+.desplegable {
+	list-style: none;
+	display: none;
+	position: relative;
+	min-width: 140px
+}
+
+nav li:hover > ul {
+	display: block;
+	background-color: rgb(12, 56, 100);
 }
 
 h3 {
@@ -68,33 +81,65 @@ h3 {
 	font-family: 'Macondo Swash Caps', cursive;
 }
 
-.slider {
+.ban {
+    width: 70%;
+    height: 300px;
+    margin: auto;
+    background-size: 100% 100%;
+    animation: banner 4s infinite;
+    animation-direction: alternate;
+	max-width: 1200px;
+	min-width: 500px;
+}
+
+@keyframes banner {
+    0%, 30% {
+        background-image: url(/imagenes/banner/banner1.png);
+        opacity: 1;
+    }
+    31%, 34%{
+        opacity: 0.1;
+    }
+    35%, 65% {
+        background-image: url(/imagenes/banner/banner2.png);
+        opacity: 1;
+    }
+    66%, 69%{
+        opacity: 0.1;
+    }
+    70%, 100% {
+        background-image: url(/imagenes/banner/banner3.png);
+        opacity: 1;
+    }
+}
+
+/* .slider {
 	width: 100%;
 	margin: auto;
 	/* overflow: hidden; */
 	justify-content: center;
-}
+} */
 
-.slider ul {
+/* .slider ul {
 
 	display: flex;
 	padding: 0;
 	width: 300%;
 	animation: cambio 10s infinite alternate linear;
 	align-content: center;
-}
+} */
 
-.slider li {
+/* .slider li {
 
 	width: 300%;
 	list-style: none;
 	align-content: center;
-}
+} */
 
-.slider img {
+/* .slider img {
 	width: 50%;
 	align-content: center;
-}
+} */
 
 .container-md {
 	background-color: rgb(177, 104, 104);
@@ -152,7 +197,7 @@ input {
 footer {
 	width: 100%;
 	background-color: rgba(51, 51, 51, 0.9);
-	padding: 15px;
+	/* padding: 15px; */
 	color: #fff;
 	text-align: center;
 	margin-top: 50px;
@@ -230,36 +275,6 @@ input {
 .advertencia {
 	color: white;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-footer {
-	width: 100%;
-	background-color: rgba(51, 51, 51, 0.9);
-	padding: 15px;
-	color: #fff;
-	text-align: center;
-	margin-top: 50px;
-	height: 130px;
-}
-
-.redes {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.social-icon {
-	display: inline-block;
-	font-size: 2em;
-	color: #fff;
-	margin: 20px;
-	transform: scale(1);
-	transition: all 0.3s ease;
-}
-
-.social-icon:hover {
-	transform: scale(1.2);
-	color: #ec9513;
 }
 
 .copyright {
@@ -379,10 +394,21 @@ footer {
         "foto1 	info-1 info-1"
     	"info-2 info-2 foto-2"
 	}
-  
+}
 @media (min-width: 1280px) {
 	.Container-Quienes{
         grid-template-areas:     
         "foto1 	info-1 info-1"
     	"info-2 info-2 foto-2"
 	}
+}
+
+@media (max-width: 800px) {
+    .Container-Quienes{
+        grid-template-areas:     
+        "foto1"
+        "info-1"
+        "foto-2"
+        "info-2"
+    }
+}

@@ -42,7 +42,6 @@ nav {
 	font-size: 1.2em;
 	color: rgb(108, 204, 244);
 	text-decoration: dashed;
-
 	transform: scale(1);
 	transition: all 0.3s ease;
 }
@@ -67,7 +66,7 @@ section {
 	list-style: none;
 	display: none;
 	position: relative;
-	min-width: 140px
+	min-width: 140px;
 }
 
 nav li:hover > ul {
@@ -192,15 +191,12 @@ h3 {
 }
 
 .grid-info{
-    /* font-family: 'Macondo Swash Caps', cursive; */
     font-size: 20px;
     color: beige;
     text-align:left;
 }
 
 .info-1, .info-2{
-    /* font-family: 'Macondo Swash Caps', cursive; */
-    /* font-size: 25px; */
     color: beige;
     text-align: justify;
     line-height: 2.5;
@@ -219,7 +215,6 @@ h3 {
 	font-size: 1em;
 	width: 100%;
 	padding: 20px;
-
 }
 
 form {

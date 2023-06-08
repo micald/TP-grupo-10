@@ -3,7 +3,7 @@ body {
 	font-family: 'Macondo Swash Caps', cursive;
 	width: 100vw;
 	margin: 0;
-	padding-top: 2em;
+	overflow-x: hidden;
 }
 
 .logo {
@@ -16,7 +16,7 @@ h1 {
 	color: rgb(12, 56, 100);
 	font-size: 3em;
 	text-align: center;
-	margin: 0.5em;
+	margin: 0 0 0.3em 0;
 }
 
 a {
@@ -33,7 +33,6 @@ a {
 
 nav {
 	background-color: rgb(12, 56, 100);
-	padding: 0.25em;
 	width: 100%;
 	display: flex;
 	flex: 1 0 33.33%;
@@ -82,7 +81,7 @@ h3 {
 
 .ban {
     width: 70%;
-    height: 300px;
+    height: 500px;
     margin: auto;
     background-size: 100% 100%;
     animation: banner 4s infinite;
@@ -93,27 +92,26 @@ h3 {
 
 @keyframes banner {
     0%, 30% {
-        background-image: url(//imagenes/banner/banner1.png);
+        background-image: url(../imagenes/banner/banner1.png);
         opacity: 1;
     }
     31%, 34%{
         opacity: 0.1;
     }
     35%, 65% {
-        background-image: url(/imagenes/banner/banner2.png);
+        background-image: url(../imagenes/banner/banner2.png);
         opacity: 1;
     }
     66%, 69%{
         opacity: 0.1;
     }
     70%, 100% {
-        background-image: url(/imagenes/banner/banner3.png);
+        background-image: url(../imagenes/banner/banner3.png);
         opacity: 1;
     }
 }
 
 .container {
-	/* display:grid; */
 	display: inline-block;
 	grid-template-columns: repeat(6, 1fr);
 	grid-gap: 30px;
@@ -130,48 +128,14 @@ h3 {
 	border: 3px solid rgb(12, 56, 100);
 	border-radius: 20px;
 }
-.border :hover{
-	border-color: rgb(12, 56, 100);
-}
-@keyframes cambio {
-	0% {
-		margin-left: 0;
-	}
-
-	22% {
-		margin-left: 0;
-	}
-
-	27% {
-		margin-left: -100%;
-	}
-
-	48% {
-		margin-left: -100%;
-	}
-
-	52% {
-		margin-left: -200%;
-	}
-
-	73% {
-		margin-left: -200%;
-	}
-
-	78% {
-		margin-left: -300%;
-	}
-
-	100% {
-		margin-left: -300%;
-	}
+.border:hover{
+	border-color: rgb(108, 204, 244);
 }
 
 .Container-Quienes{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr; 
     grid-template-rows: 45% 55%; 
-    /* gap: 10px;  */
     grid-template-areas: 
     "foto1 	info-1 info-1"
     "info-2 info-2 foto-2" 
@@ -209,7 +173,7 @@ h3 {
 	border-color: aliceblue;
 }
 .container-md {
-	background-color: rgb(177, 104, 104);
+	/* background-color: rgb(177, 104, 104); */
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	color: white;
 	font-size: 1em;
@@ -305,7 +269,6 @@ input {
 
 .consulta {
 	height: 300px;
-
 }
 
 .advertencia {
@@ -320,10 +283,9 @@ input {
 footer {
 	width: 100%;
 	background-color: rgb(12, 56, 100);
-	/* padding: 15px; */
 	color: #fff;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 20px;
 	height: 130px;
 }
 

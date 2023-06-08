@@ -17,28 +17,7 @@
     <link rel="icon" type="image/png" href="imagenes/logo2.ico" sizes="16x16">
     <link rel="icon" type="image/png" href="imagenes/logo2.ico" sizes="32x32">
     <link rel="icon" type="image/png" href="imagenes/logo2.ico" sizes="64x64">
-    <script>
-
-        function validardatos() {
-            var apellidoynombre = $("#apynom").val();
-            console.log("Apellido y Nombre", apellidoynombre);
-            if (apellidoynombre == "") {
-                $("#mensaje1").text("Completar Datos");
-            }
-            var domicilio = $("#domicilio").val();
-            console.log("Domicilio", domicilio);
-            if (domicilio == "") {
-                $("#mensaje2").text("COMPLETAR DATOS");
-            }
-            var mail = $("#email").val();
-            console.log("Mail", mail);
-            if (mail = "/^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;") {
-                $("#mensaje3").text("ERROR");
-            }
-
-        }
-    </script>
-
+    <script src="Js/validacion.js"></script>
 </head>
 
 <body>

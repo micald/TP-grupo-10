@@ -138,26 +138,38 @@ h3 {
 	border-color: rgb(108, 204, 244);
 }
 
+.quienessomos {
+	padding: 0 2rem 0 1rem;
+	text-align: justify;
+	color: rgb(12, 56, 100);
+}
+
 .Container-Quienes{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr; 
     grid-template-rows: 45% 55%; 
     grid-template-areas: 
     "foto1 	info-1 info-1"
-    "info-2 info-2 foto-2" 
+    "info-2 foto-2 foto-2" 
 }
 .foto-1 { 
     grid-area: foto1; 
 }
 .info-1 { 
     grid-area: info-1; 
+	padding-right: 2rem;
 }
 .info-2 { 
+	display: grid;
     grid-area: info-2; 
+	align-content: space-between;
+	justify-content: right;
 }
 .foto-2 { 
+	display: grid;
     grid-area: foto-2;
-    align-content: flex-end; 
+	padding-right: 2rem;
+	justify-content: center;
 }
 
 .grid-info{
@@ -178,6 +190,7 @@ h3 {
 	border-image: auto;
 	border-color: aliceblue;
 }
+
 .container-md {
 	/* background-color: rgb(177, 104, 104); */
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

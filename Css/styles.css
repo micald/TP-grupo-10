@@ -262,7 +262,8 @@ input {
 }
 
 .consulta {
-	height: 300px;
+	height: 100px;
+	text-align: start;
 }
 
 .advertencia {

@@ -1,50 +1,32 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var form = document.getElementById("formulario");
-    form.addEventListener("submit", validarFormulario);
+function validarFormulario(event) {
+    event.preventDefault();
 
-    function validarFormulario(event) {
-      event.preventDefault();
-
-      var nombre = document.forms["formulario"]["apynom"].value;
-      var email = document.forms["formulario"]["email"].value;
-      var domicilio = document.forms["formulario"]["domicilio"].value;
-      var consulta = document.forms["formulario"]["consulta"].value;
-
-      if (nombre.trim() === "") {
-        alert("Por favor, ingresa tu nombre.");
-        return false;
-      }
-
-      if (nombre.length < 3) {
-        alert("El nombre debe tener al menos 3 caracteres.");
-        return false;
-      }
-
-      if (email.trim() === "") {
-        alert("Por favor, ingresa tu correo electrónico.");
-        return false;
-      }
-
-      if (domicilio.trim() === "") {
-        alert("Por favor, ingresa tu domicilio.");
-        return false;
-      }
-
-      if (domicilio.length < 7) {
-        alert("El domicilio debe tener al menos 7 caracteres.");
-        return false;
-      }
-
-      if (consulta.trim() === "") {
-        alert("Por favor, ingresa tu consulta.");
-        return false;
-      }
-
-      if (consulta.length < 10) {
-        alert("La consulta debe tener al menos 10 caracteres.");
-        return false;
-      }
-
-      form.submit();
+    let formulario = document.getElementById('miFormulario');
+    let nombre = formulario.elements ['nombre'].value;
+    let telefono = formulario.elements ['telefono'].value;
+    let email = formulario.elements ['email'].value;
+    let sugerencias = formulario.elements ['sugerencias'].value;
+    
+    console.log('nombre')
+    if (!nombre || !email || !telefono || !sugerencias) {
+        alert("Por favor, complete todos los campos.");
     }
-  })
+
+    if (nombre.length < 3 ) {
+        alert("El nombre debe tener mas de 3 caracteres.");
+    }
+
+    // Validar el formato del mail utilizando una expresión regular
+    let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (!email.match(emailRegex)) {
+        alert("Por favor, ingrese un correo electrónico válido.");
+    }
+
+    // Validar el formato del número de teléfono utilizando una expresión regular
+    let telefonoRegex = /^[0-9]{10}$/;
+    if (!telefono.match(telefonoRegex)) {
+        alert("Por favor, ingrese un número de teléfono válido de 10 dígitos.");
+    }
+
+    
+}

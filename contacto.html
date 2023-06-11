@@ -58,21 +58,23 @@
             <center><p>Dejanos tu consulta o sugerencias. Te responderemos a la brevedad</p></center>
             
             <div class="formulario d-flex justify-content-center">
-                <form class="col-6" id="miFormulario" onsubmit="return validarFormulario(event)">
+                <form class="col-6" id="miFormulario" onsubmit="return validarFormulario(event)" action="https://formspree.io/f/mrgvwngw"
+                method="POST">
                     
                     <label for="nombre">APELLIDO Y NOMBRE:</label><br>
-                    <input type="text" id="nombre" ><br>
+                    <input type="text" id="nombre" name="nombre" ><br>
 
                     <label for="telefono">TELEFONO:</label><br>
-                    <input type="text" id="telefono" placeholder="(XX) XXX XXX" ><br>
+                    <input type="text" id="telefono" name="telefono" placeholder="(XX) XXX XXX" ><br>
 
                     <label for="email">E-MAIL:</label ><br>
-                    <input type="email" id="email" placeholder="email@dominio.com" ><br>
+                    <input type="email" id="email" name="email" placeholder="email@dominio.com" ><br>
 
                     <label id="consulta">CONSULTA:</label><br>
-                    <input type="text" class="sugerencias" id="sugerencias" ><br>
+                    <input type="text" class="sugerencias" name="sugerencias" id="sugerencias" ><br>
                     
-                    <input type="submit" value="Enviar" id="Enviar">
+                    <button id="my-form-button">Enviar</button>
+                    <p id="my-form-status"></p>
                 </form>
             </div>
         </div>

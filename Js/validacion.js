@@ -7,7 +7,6 @@ function validarFormulario(event) {
     let email = formulario.elements['email'].value;
     let sugerencias = formulario.elements['sugerencias'].value;
 
-    console.log('nombre')
     if (!nombre || !email || !telefono || !sugerencias) {
         alert("Por favor, complete todos los campos.");
     }
@@ -32,4 +31,42 @@ function validarFormulario(event) {
         }
     }
 
+   /*  var feedback = {
+        nombre: nombre,
+        telefono: telefono,
+        email: email,
+        sugerencias: sugerencias,
+    } */
 }
+
+/* localStorage.setItem('feedback', JSON.stringify(feedback)) */
+
+var form = document.getElementById("miFormulario");
+async function handleSubmit(event) {
+event.preventDefault();
+var status = document.getElementById("my-form-status");
+var data = new FormData(event.target);
+fetch(event.target.action, {
+  method: form.method,
+  body: data,
+  headers: {
+    'Accept': 'application/json'
+}
+}).then(response => {
+  if (response.ok) {
+    status.innerHTML = "Thanks for your submission!";
+    form.reset()
+  } else {
+    response.json().then(data => {
+    if (Object.hasOwn(data, 'errors')) {
+      status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+    } else {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    }
+  })
+}
+}).catch(error => {
+  status.innerHTML = "Oops! There was a problem submitting your form"
+});
+}
+form.addEventListener("submit", handleSubmit)

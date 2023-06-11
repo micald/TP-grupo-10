@@ -163,9 +163,11 @@ h4 {
 }
 
 .quienessomos {
-	padding: 0 2rem 0 1rem;
+	padding: 0 3rem 0 3rem;
 	text-align: justify;
 	color: rgb(12, 56, 100);
+	font-size: 1.2rem;
+	font-weight: 800;
 }
 
 .Container-Quienes {
@@ -184,13 +186,15 @@ h4 {
 .info-1 {
 	grid-area: info-1;
 	padding-right: 2rem;
+	font-size: 1.2rem;
 }
 
 .info-2 {
 	display: grid;
 	grid-area: info-2;
-	align-content: space-between;
-	justify-content: right;
+	align-content: center;
+	justify-content: center;
+	font-size: 2rem;
 }
 
 .foto-2 {
@@ -208,6 +212,7 @@ h4 {
 
 .info-1,
 .info-2 {
+	padding: 1rem 3rem 1rem 3rem;
 	color: beige;
 	text-align: justify;
 	line-height: 2.5;
@@ -216,6 +221,7 @@ h4 {
 
 .foto-1,
 .foto-2 {
+	padding: 1rem 3rem 0 3rem;
 	max-width: 100%;
 	border-image: auto;
 	border-color: aliceblue;
@@ -301,8 +307,9 @@ footer {
 		grid-template-areas:
 			"foto1"
 			"info-1"
-			"foto-2"
 			"info-2"
+			"foto-2"
+			
 	}
 }
 

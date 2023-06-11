@@ -261,15 +261,11 @@ input {
 	background-color: rgb(108, 204, 244);
 }
 
-.consulta {
-	height: 100px;
-	text-align: start;
-}
 
-.advertencia {
+/* .advertencia {
 	color: white;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+} */
 
 .copyright {
 	font-size: 1em;

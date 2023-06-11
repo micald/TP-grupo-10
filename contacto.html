@@ -23,56 +23,54 @@
 <body>
     <header>
         <nav>
-            <section id="Inicio">
-                <h2><a href="index.html"> Inicio</a></h2>
-            </section>
-            <section id="productos">
-                <li>
-                    <h2><a href="index.html">Productos</a></h2>
-                    <ul class="desplegable">
-                        <li><a href="gorrastrucker.html">Gorras trucker</a></li>
-                        <li><a href="gorrosdelana.html">Gorros de lana</a></li>
-                        <li><a href="parchesbordados.html">Parches bordados</a></li>
-                    </ul>
-                </li>
-            </section>
-
-            <section id="quienes-somos">
-                <h2><a href="Quienes-Somos.html"> Quiénes somos</a></h2>
-            </section>
-
-            <section id="contacto">
-                <h2><a href="contacto.html">Contacto</a></h2>
-            </section>
+          <section id="Inicio">
+            <h2><a href="index.html"> Inicio</a></h2>
+          </section>
+          <section id="productos">
+            <li>
+              <h2><a href="index.html">Productos</a></h2>
+              <ul class="desplegable">
+                <li><a href="gorrastrucker.html">Gorras trucker</a></li>
+                <li><a href="gorrosdelana.html">Gorros de lana</a></li>
+                <li><a href="parchesbordados.html">Parches bordados</a></li>
+              </ul>
+            </li>
+          </section>
+          <section id="quienes-somos">
+            <h2><a href="Quienes-Somos.html"> Quiénes somos</a></h2>
+          </section>
+          <section id="contacto">
+            <h2><a href="contacto.html">Contacto</a></h2>
+          </section>
         </nav>
         <div>
-            <h1 class="animate__animated animate__bounce">Gallo de Agua</h1>
-            <div class="logo">
-                <img class="animate__animated animate__bounce" src="imagenes/logo2.png" alt="logogallo" width="300px"
-                    height="300px">
-            </div>
-            <h1 class="animate__animated animate__bounce">Indumentaria</h1>
+          <h1 class="animate__animated animate__bounce">Gallo de Agua</h1>
+          <div class="logo">
+            <img class="animate__animated animate__bounce" src="imagenes/logo2.png" alt="logogallo" width="200px"
+              height="200px">
+          </div>
+          <h4 class="animate__animated animate__bounce">Accesorios de indumentaria</h4>
         </div>
-
-    </header>
+      </header>
 
     <section id="contacto">
         <div class="container-md ">
             <p>Dejanos tu consulta o sugerencias. Te responderemos a la brevedad</p>
             <div class="formulario d-flex justify-content-center">
-                <form class="col-6">
-                    <label for="apynom">APELLIDO Y NOMBRE</label><br>
-                    <input type="text" id="apynom"><br>
-                    <label class="advertencia" id="mensaje1"></label><br>
-                    <label for="domicilio">DIRECCION</label><br>
-                    <input type="text" id="domicilio"><br>
-                    <label class="advertencia" id="mensaje2"></label><br>
-                    <label for="email">E-MAIL</label><br>
-                    <input type="email" id="email"><br>
-                    <label class="advertencia" id="mensaje3"></label><br>
-                    <label id="consulta">CONSULTA</label><br>
-                    <input type="text" class="consulta"><br>
-                    <input type="submit" value="Enviar" id="Enviar" onclick="validardatos()">
+                <form class="col-6"name="formulario" onsubmit="return validarFormulario()" method="post">
+                    <label for="apynom">APELLIDO Y NOMBRE:</label><br>
+                    <input type="text" id="apynom" required><br>
+
+                    <label for="domicilio">DOMICILIO:</label><br>
+                    <input type="text" id="domicilio"required><br>
+
+                    <label for="email">E-MAIL:</label ><br>
+                    <input type="email" id="email" required><br>
+
+                    <label id="consulta">CONSULTA:</label><br>
+                    <input type="text" class="consulta" required><br>
+                    
+                    <input type="submit" value="Enviar" id="Enviar">
                 </form>
             </div>
         </div>

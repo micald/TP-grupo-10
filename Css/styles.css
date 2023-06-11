@@ -33,6 +33,7 @@ a {
 
 nav {
 	background-color: rgb(12, 56, 100);
+	font-family: 'Macondo Swash Caps', cursive;
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;

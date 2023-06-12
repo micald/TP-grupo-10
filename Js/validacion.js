@@ -15,7 +15,7 @@ function validarFormulario(event) {
             alert("El nombre debe tener mas de 3 caracteres.");
         }
         if (sugerencias.length < 10) {
-            alert("Por favro escribenos mas de 10 caracteres.");
+            alert("Por favor escribenos mas de 10 caracteres.");
         }
 
         // Validar el formato del mail utilizando una expresión regular
